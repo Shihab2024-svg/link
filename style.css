@@ -1,0 +1,121 @@
+/* إعدادات الأساس */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-color: #c9a17f; /* لون الخلفية مأخوذ من الصورة */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* الهيدر */
+header {
+  background-color: #28594f; /* لون أخضر داكن مشابه للصورة */
+  color: white;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+/* الشعار داخل الهيدر */
+header img {
+  height: 60px; /* ضبط ارتفاع الشعار */
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* الروابط داخل #links */
+#links {
+  display: flex;
+  flex-direction: column; /* وضع الروابط بشكل عمودي */
+  gap: 15px; /* مسافة بين الأزرار */
+  width: 100%; /* عرض الروابط بعرض الحاوية */
+  
+}
+
+#links a {
+  display: block;
+  background: #28594f; /* لون الخلفية */
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center; /* محاذاة النص في المنتصف */
+  width: 100%;
+  gap: 150px;
+  
+}
+
+.sp {
+  font-size: 1.2em;
+  margin-right: auto;
+  justify-content: flex-start;
+  direction: rtl; 
+}
+
+#links a:hover {
+  background-color: #184334; /* لون أغمق عند التمرير */
+  transform: scale(1.05);
+}
+/* زر إضافة رابط */
+#addLink {
+  background: #d69e62; /* لون مشابه للون العناصر بالصورة */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1em;
+}
+
+#addLink:hover {
+  background: #b57d48; /* لون داكن عند التمرير */
+}
+
+/* الفوتر */
+footer {
+  background: rgba(40, 89, 79, 0.8); /* لون شبه شفاف مشابه */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+/* تأثيرات النص */
+a, button {
+  text-transform: uppercase;
+}
+
+.kk {
+  display: none;
+}
+
