@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #c9a17f; /* لون الخلفية مأخوذ من الصورة */
+  background-color: #c9a17f;
+  /* لون الخلفية مأخوذ من الصورة */
   color: #333;
   margin: 0;
   padding: 0;
@@ -25,7 +26,8 @@ body {
 
 /* الهيدر */
 header {
-  background-color: #28594f; /* لون أخضر داكن مشابه للصورة */
+  background-color: #28594f;
+  /* لون أخضر داكن مشابه للصورة */
   color: white;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
@@ -39,7 +41,8 @@ header {
 
 /* الشعار داخل الهيدر */
 header img {
-  height: 60px; /* ضبط ارتفاع الشعار */
+  height: 60px;
+  /* ضبط ارتفاع الشعار */
 }
 
 header h1 {
@@ -50,41 +53,49 @@ header h1 {
 /* الروابط داخل #links */
 #links {
   display: flex;
-  flex-direction: column; /* وضع الروابط بشكل عمودي */
-  gap: 15px; /* مسافة بين الأزرار */
-  width: 100%; /* عرض الروابط بعرض الحاوية */
-  
+  flex-direction: column;
+  /* وضع الروابط بشكل عمودي */
+  gap: 15px;
+  /* مسافة بين الأزرار */
+  width: 100%;
+  /* عرض الروابط بعرض الحاوية */
+
 }
 
 #links a {
   display: block;
-  background: #28594f; /* لون الخلفية */
+  background: #28594f;
+  /* لون الخلفية */
   color: white;
   padding: 16px;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.1em;
   transition: background-color 0.3s, transform 0.3s;
-  text-align: center; /* محاذاة النص في المنتصف */
+  text-align: center;
+  /* محاذاة النص في المنتصف */
   width: 100%;
   gap: 150px;
-  
+
 }
 
 .sp {
   font-size: 1.2em;
   margin-right: auto;
   justify-content: flex-start;
-  direction: rtl; 
+  direction: rtl;
 }
 
 #links a:hover {
-  background-color: #184334; /* لون أغمق عند التمرير */
+  background-color: #184334;
+  /* لون أغمق عند التمرير */
   transform: scale(1.05);
 }
+
 /* زر إضافة رابط */
 #addLink {
-  background: #d69e62; /* لون مشابه للون العناصر بالصورة */
+  background: #d69e62;
+  /* لون مشابه للون العناصر بالصورة */
   color: white;
   padding: 12px 25px;
   border: none;
@@ -95,23 +106,14 @@ header h1 {
 }
 
 #addLink:hover {
-  background: #b57d48; /* لون داكن عند التمرير */
+  background: #b57d48;
+  /* لون داكن عند التمرير */
 }
 
-/* الفوتر */
-footer {
-  background: rgba(40, 89, 79, 0.8); /* لون شبه شفاف مشابه */
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1em;
-}
 
 /* تأثيرات النص */
-a, button {
+a,
+button {
   text-transform: uppercase;
 }
 
@@ -119,3 +121,103 @@ a, button {
   display: none;
 }
 
+
+/* الفوتر */
+footer {
+  background: #28594f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .footer-section {
+    width: 48%;
+    /* 2 أعمدة على الشاشات الأصغر */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+    /* عنصر واحد في كل سطر على الشاشات الصغيرة */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    /* تحويل الفوتر إلى عمودي على الشاشات الصغيرة */
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+    /* تقليل المسافة على الشاشات الصغيرة جدًا */
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+    /* تقليل حجم العنوان */
+  }
+
+  .footer-section p {
+    font-size: 12px;
+    /* تقليل حجم النص */
+  }
+}
+
+
+.butt {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #184334;
+  margin: 2px;
+}
